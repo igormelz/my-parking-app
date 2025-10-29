@@ -1,8 +1,8 @@
 import type { ComponentType, JSX } from "react";
 import { MapPin, User } from "lucide-react";
 
-import { MapPage } from "@/pages/MapPage";
 import { ProfilePage } from "@/pages/ProfilePage";
+import { ExplorePage } from "@/pages/ExplorePage";
 
 interface Route {
   path: string;
@@ -14,8 +14,8 @@ interface Route {
 export const routes: Route[] = [
   {
     path: "/",
-    Component: MapPage,
-    title: "Map",
+    Component: ExplorePage,
+    title: "Explore",
     icon: <MapPin className="w-6 h-6" />,
   },
   {
